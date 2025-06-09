@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, #0a0f2c, #112057);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container {
+  background-image: url('/desktop.jpg'); /* bạn có thể dùng hình nền gạch */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 100px;
+  width: 100%;
+  height: 100vh;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: radial-gradient(circle at center, #fff3 0%, #0000 80%);
+  z-index: 1;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 15px;
+  padding: 40px;
+  width: 320px;
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur(6px);
+  color: #fff;
+  z-index: 2;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.options a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #e6e6e6;
+}
+
+.register {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.register a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
