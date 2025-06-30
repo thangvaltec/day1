@@ -1,0 +1,23 @@
+body{
+    background-color: aquamarine;
+}
+h1{
+    color: blue;
+    text-align: center;
+}
+h5{
+    color:rgb(164, 184, 48)
+}
+table,th,td{
+border:1px solid black
+}
+.my_class1{
+    background-color: red;
+}
+.main{
+    color: blue;
+    font-size: 50px;
+}
+#css{
+    color: salmon;
+}

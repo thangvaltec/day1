@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single-Page CV phanvanthang</title>
+    <title>Single-Page CV phan van thang</title>
+    <link rel="icon" href="icon.png" type ="image/png">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<br>
+    <a href="#C12">chuyen den cuoi trang</a><br>
+    <a href="#next">chueyn den next</a>
     <hr>
     <h1>PHAN VAN THANG</h1>
-    <h5>Junior Frontend Developer</h5><br><br>
+    <h5>Junior Frontend Developer</h5>
     <pre>
         183-0012 tokyo
         fuchushi oshitate
@@ -22,16 +26,63 @@
         Responsive Web Design,Test UI+API
         Vietnamese,japanese,english,chinese
     </pre>
-    <h5>Experience</h5><hr><br>
+    <h5>Experience</h5>
     <p>Company Name,Location-Job Title</p><br>
-    <ol type="a">
+    <ol type="a"><br>
         <li>A bank company</li>
         <li>B contrucsion company</li>
         <li>C business company</li>
     </ol>
 
-    <h5>Across the internet</h5>
+    <h5 id="next">Across the internet</h5>
     <h5>Interest</h5>
-
+    <a href="https://www.google.com/" target="_top">google</a>
+    <!--_blank new tab
+        _self same tab mac dinh
+        _self	Mặc định	Trong chính tab/frame hiện tại
+_blank	Tab mới	Mở ở tab mới
+_parent	Cha	Mở ở khung cha của iframe
+_top	Gốc	Mở ở cửa sổ gốc, loại bỏ toàn bộ iframe
+        -->
+    <a href="https://www.google.com/" title="hoc html">
+        <img src="icon.png">
+    </a><br>
+    <img src="icon.png" alt="cv" width="200" height="200">
+    <!--  <img src="icon.png" alt="cv" style="width:200px;height=200px;">-->
+ <table>
+    <tr>
+        <th colspan="2">thu2</th><!--gop o-->
+        
+    </tr>
+    <tr>
+        <td>chao</td>
+        <td>mi</td>
+    </tr>
+ </table>
+ <h2>an ordered htmk list</h2>
+ <ol style="list-style: upper-alpha;">
+    <li>coffee</li>
+    <li>tea</li>
+    <li>milk</li>
+ </ol>
+  <ul >
+    <li>coffee</li>
+    <li>tea</li>
+    <li>milk</li>
+ </ul>
+ <p class="my_class1">xin chao toi moi hoc  </p>
+ <h2 id="C12">hom nya la buoi thu 1</h2>
+ <p id="Css">hoc them</p>
+ <iframe src="https://www.w3schools.com" width="200"
+ height="300" title="hoc html" style="border: 4px solid red;"></iframe></br>
+ <button type="button" onclick="myFunction()">click button now</button>
+ <p id="demo1">day la lession one</p>
+ <script>
+    function myFunction(){
+        document.getElementById("demo1").innerHTML = "hello"
+    }
+ </script>
+ <input type="submit">
+ <select name="com" id="com1"></select>
 </body>
 </html>
